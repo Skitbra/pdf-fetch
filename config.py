@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Gmail API Configuration
-GOOGLE_APPLICATION_CREDENTIALS = os.getenv('/Users/ronanwatson/workspace/github/pdf-fetch/credentials.json')
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 DOWNLOAD_DIR = os.getenv('DOWNLOAD_DIR', './downloads')
 EMAIL_QUERY = os.getenv('EMAIL_QUERY', 'has:attachment')
 
